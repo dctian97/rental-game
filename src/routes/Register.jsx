@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
     Button,
     Form,
@@ -143,6 +144,7 @@ const Register = () => {
             <Button type="primary" htmlType="submit">
             新規登録
             </Button>
+            <Link to={'/login'} >ログイン</Link>
         </Form.Item>
         </Form>
     );

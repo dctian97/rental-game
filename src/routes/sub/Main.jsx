@@ -47,6 +47,9 @@ export default function Main() {
             },
         };
     return (
-        <Column {...config} />
+        <>
+            <h1>売上</h1>
+            <Column {...config} />
+        </>
     )
 }

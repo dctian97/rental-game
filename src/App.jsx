@@ -222,17 +222,18 @@ const App = () => {
                     src={`/images/${game.ゲームid}.jpg`}
                   />
                 </div>
-            
+                <div style={{color:'orange', fontSize:"24px"}}>¥{game.金額}</div>
+                <p>在庫：{game.在庫数}</p>
                 <MyButton game={game} onAddToCart={addToCart} />
                 <div>
-                <Space size={[0, 'small']}> 
-                  <Tag bordered={false} color="processing">
-                    {game.プラットフォーム}
-                  </Tag>
-                  <Tag bordered={false} color="success">
-                    {game.デベロッパー}
-                  </Tag>
-                </Space>
+                  <Space size={[0, 'small']}> 
+                    <Tag bordered={false} color="processing">
+                      {game.プラットフォーム}
+                    </Tag>
+                    <Tag bordered={false} color="success">
+                      {game.デベロッパー}
+                    </Tag>
+                  </Space>
                 </div>
               </Card>
             </Col>

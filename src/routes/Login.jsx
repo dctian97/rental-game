@@ -19,7 +19,11 @@ const Login = () => {
       if (response.ok) {
         localStorage.setItem('userToken', data.token);
         localStorage.setItem('username', values.nickname);
-        navigate('/');
+        if (values.nickname === 'admin' && values.email === 'admin@admin.com') {
+          navigate('/home');
+        } else {
+          navigate('/');
+        }
       } else {
         message.error(data.message);
       }
