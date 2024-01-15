@@ -91,6 +91,9 @@ const Login = () => {
           </Button>
           <Link to="/Register">新規登録</Link>
         </Space>
+        <p>管理者ページへのアクセスは</p>
+        <p>氏名:admin</p>
+        <p>メールアドレス：admin@admin.com</p>
       </Form.Item>
     </Form>
   );

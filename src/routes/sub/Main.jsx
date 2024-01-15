@@ -5,7 +5,7 @@ export default function Main() {
     useEffect(() => {
     (async () => {
         try {
-            const response = await fetch("http://127.0.0.1:5000/chart");
+            const response = await fetch("/.netlify/functions/chart");
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
