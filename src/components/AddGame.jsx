@@ -35,8 +35,9 @@ export default function AddGameForm() {
                     });
         
                     if (response.ok) {
-                        message.success("新しいゲームが追加されました");
                         form.resetFields();
+                        window.location.reload()
+                        message.success("新しいゲームが追加されました");
                     } else {
                         message.error("エラーが発生しました");
                     }

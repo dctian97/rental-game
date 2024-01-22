@@ -21,7 +21,7 @@ export default function Rental() {
     useEffect(() => {
         (async () => {
             try {
-                const response = await fetch("/.netlify/functions/rentallist");
+                const response = await fetch("http://127.0.0.1:5000/rentallist");
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }

@@ -136,7 +136,7 @@ const App = () => {
   useEffect(() => {
     (async () => {
         try {
-            const response = await fetch("/.netlify/functions/gamelist");
+            const response = await fetch("http://127.0.0.1:5000/gamelist");
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
